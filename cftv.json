@@ -1,0 +1,42 @@
+{
+	"providerName":"Cloudflare TV",
+	"lastUpdated":"2020-06-11T8:34:21+00:00",
+	"language":"en",
+	"liveFeeds": [
+		{
+			"id":"CFTVliveBetterInternet",
+			"title":"Cloudflare TV Live",
+			"content":{
+				"dateAdded":"2020-06-11T7:34:21+00:00",
+				"videos": [
+				{
+					"url":"https://live.cloudflare.tv/hls/live.m3u8",
+					"quality": "SD",
+					"videoType":"HLS"
+				}
+				],
+				"duration":2408,
+				"captions": [ ],
+				"language": "en"
+				},
+			"thumbnail":"https://www.ding.net/cftv/cftv.png",
+			"shortDescription":"Cloudflare TV Live",
+			"longDescription":"Live stream from Cloudflare.TV"
+		}
+			],
+	"categories": [
+		{
+			"name": "Live",
+			"playlistName": "Live",
+			"order": "most_recent"
+		}
+		],
+	"playlists": [
+		{
+			"name":"Live",
+			"itemIds": [
+				"CFTVliveBetterInternet"
+				]
+		}
+		]
+}
