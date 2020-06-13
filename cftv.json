@@ -1,42 +1,361 @@
 {
-	"providerName":"Cloudflare TV",
-	"lastUpdated":"2020-06-11T8:34:21+00:00",
-	"language":"en",
-	"liveFeeds": [
-		{
-			"id":"CFTVliveBetterInternet",
-			"title":"Cloudflare TV Live",
-			"content":{
-				"dateAdded":"2020-06-11T7:34:21+00:00",
-				"videos": [
-				{
-					"url":"https://live.cloudflare.tv/hls/live.m3u8",
-					"quality": "SD",
-					"videoType":"HLS"
-				}
-				],
-				"duration":2408,
-				"captions": [ ],
-				"language": "en"
-				},
-			"thumbnail":"https://www.ding.net/cftv/cftv.png",
-			"shortDescription":"Cloudflare TV Live",
-			"longDescription":"Live stream from Cloudflare.TV"
-		}
-			],
-	"categories": [
-		{
-			"name": "Live",
-			"playlistName": "Live",
-			"order": "most_recent"
-		}
-		],
-	"playlists": [
-		{
-			"name":"Live",
-			"itemIds": [
-				"CFTVliveBetterInternet"
-				]
-		}
-		]
+  "providerName": "Cloudflare TV",
+  "lastUpdated": "2020-06-12T8:35:21+00:00",
+  "language": "en",
+  "liveFeeds": [
+    {
+      "id": "CFTVliveBetterInternet",
+      "title": "Cloudflare TV Live",
+      "content": {
+        "dateAdded": "2020-06-12T7:34:21+00:00",
+        "videos": [
+          {
+            "url": "https://live.cloudflare.tv/hls/live.m3u8",
+            "quality": "SD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 2408,
+        "captions": [],
+        "language": "en"
+      },
+      "thumbnail": "https://www.ding.net/cftv/cftv.png",
+      "tags": [
+        "CFTVStream"
+      ],
+      "shortDescription": "Live and Best-of content from Cloudflare.TV",
+      "longDescription": "Live and Best-of content from Cloudflare.TV"
+    },
+	{
+      "id": "liveBuiltTest",
+      "title": "The Internet was Built for This",
+      "content": {
+        "dateAdded": "2020-06-12T01:46:00+00:00",
+        "videos": [
+          {
+            "url": "https://videodelivery.net/3f279831ceb2750c366d1b8bce3fa7bd/manifest/video.mpd",
+            "quality": "FHD",
+            "videoType": "DASH"
+          }
+        ],
+        "duration": 45,
+        "captions": []
+      },
+      "credit": [],
+      "language": "en",
+      "thumbnail": "https://videodelivery.net/3f279831ceb2750c366d1b8bce3fa7bd/thumbnails/thumbnail.jpg?width=800&time=5s",
+      "releaseDate": "2020-06-12T01:46:00+00:00",
+      "genres": [
+        "technology"
+      ],
+      "tags": [
+        "BuiltForThis"
+      ],
+      "shortDescription": "The Internet was designed to handle crisis. Learn more at builtforthis.net",
+      "longDescription": "The Internet was designed to handle crisis. Learn more at builtforthis.net"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Live",
+      "query": "CFTVStream OR liveBuiltTest",
+      "order": "most_recent"
+    },
+    {
+      "name": "Best Of",
+      "playlistName": "BestOf",
+      "order": "manual"
+    },
+    {
+      "name": "Internet Summit",
+      "query": "InternetSummit",
+      "order": "most_popular"
+    },
+    {
+      "name": "Cloudflare Connect",
+      "query": "CloudflareConnect",
+      "order": "most_popular"
+    }
+  ],
+  "playlists": [
+    {
+      "name": "LiveTV",
+      "itemIds": [
+        "CFTVliveBetterInternet"
+      ]
+    },
+    {
+      "name": "BestOf",
+      "itemIds": [
+        "30337",
+        "30338",
+        "39339",
+        "30340",
+        "30341",
+        "30342",
+        "30343",
+        "30344",
+        "30345"
+      ]
+    }
+  ],
+  "shortFormVideos": [
+    {
+      "id": "30337",
+      "title": "Conversation with Chris Young, Former CEO of McAfee",
+      "content": {
+        "dateAdded": "2020-06-12T01:46:00+00:00",
+        "videos": [
+          {
+            "url": "https://videodelivery.net/1e2a560aba98d9de2d2d0cc2ef4066be/manifest/video.mpd",
+            "quality": "SD",
+            "videoType": "DASH"
+          }
+        ],
+        "duration": 2001,
+        "captions": []
+      },
+      "credit": [],
+      "language": "en",
+      "genres": [
+        "technology"
+      ],
+      "tags": [
+        "Interview"
+      ],
+      "thumbnail": "https://videodelivery.net/1e2a560aba98d9de2d2d0cc2ef4066be/thumbnails/thumbnail.jpg?width=800&time=5s",
+      "releaseDate": "2020-06-12T01:46:00+00:00",
+      "shortDescription": "The inaugural episode of Cloudflare TV: A special conversation with Chris Young, former CEO of McAfee, joined by Matthew Prince, co-founder and CEO of Cloudflare.",
+      "longDescription": "The inaugural episode of Cloudflare TV: A special conversation with Chris Young, former CEO of McAfee, joined by Matthew Prince, co-founder and CEO of Cloudflare."
+    },
+    {
+      "id": "30338",
+      "title": "Project Galileo Overview",
+      "content": {
+        "dateAdded": "2020-06-12T01:46:00+00:00",
+        "videos": [
+          {
+            "url": "https://videodelivery.net/0b03e23686d2014ccb2b626be80f4707/manifest/video.mpd",
+            "quality": "SD",
+            "videoType": "DASH"
+          }
+        ],
+        "duration": 1469,
+        "captions": []
+      },
+      "credit": [],
+      "language": "en",
+      "genres": [
+        "technology"
+      ],
+      "tags": [
+        "Interview"
+      ],
+      "thumbnail": "https://videodelivery.net/0b03e23686d2014ccb2b626be80f4707/thumbnails/thumbnail.jpg?width=800&time=5s",
+      "releaseDate": "2020-06-12T01:46:00+00:00",
+      "shortDescription": "Project Galileo is Cloudflare’s response to cyber attacks launched against important, yet vulnerable targets, like artistic groups, humanitarian organizations, and the voices of political dissent.",
+      "longDescription": "Project Galileo is Cloudflare’s response to cyber attacks launched against important, yet vulnerable targets, like artistic groups, humanitarian organizations, and the voices of political dissent."
+    },
+    {
+      "id": "30339",
+      "title": "Spotlight on Latino Excellence with Candice Madruga Knoll",
+      "content": {
+        "dateAdded": "2020-06-12T01:46:00+00:00",
+        "videos": [
+          {
+            "url": "https://videodelivery.net/eaa55f6c433f0a9d80d3d3a12595a3da/manifest/video.mpd",
+            "quality": "SD",
+            "videoType": "DASH"
+          }
+        ],
+        "duration": 3524,
+        "captions": []
+      },
+      "credit": [],
+      "language": "en",
+      "genres": [
+        "technology"
+      ],
+      "tags": [
+        "Interview"
+      ],
+      "thumbnail": "https://videodelivery.net/eaa55f6c433f0a9d80d3d3a12595a3da/thumbnails/thumbnail.jpg?width=800&time=5s",
+      "releaseDate": "2020-06-12T01:46:00+00:00",
+      "shortDescription": "An interview with Candice Madruga Knoll, Senior Customer Success Manager at Cloudflare.",
+      "longDescription": "An interview with Candice Madruga Knoll, Senior Customer Success Manager at Cloudflare."
+    },
+    {
+      "id": "30340",
+      "title": "The Internet was Built for This",
+      "content": {
+        "dateAdded": "2020-06-12T01:46:00+00:00",
+        "videos": [
+          {
+            "url": "https://videodelivery.net/3f279831ceb2750c366d1b8bce3fa7bd/manifest/video.mpd",
+            "quality": "FHD",
+            "videoType": "DASH"
+          }
+        ],
+        "duration": 45,
+        "captions": []
+      },
+      "credit": [],
+      "language": "en",
+      "thumbnail": "https://videodelivery.net/3f279831ceb2750c366d1b8bce3fa7bd/thumbnails/thumbnail.jpg?width=800&time=5s",
+      "releaseDate": "2020-06-12T01:46:00+00:00",
+      "genres": [
+        "technology"
+      ],
+      "tags": [
+        "BuiltForThis"
+      ],
+      "shortDescription": "The Internet was designed to handle crisis. Learn more at builtforthis.net",
+      "longDescription": "The Internet was designed to handle crisis. Learn more at builtforthis.net"
+    },
+    {
+      "id": "30341",
+      "title": "How History Informs Today: Babbage, Turing, Lovelace, & the Discovery of Computation",
+      "content": {
+        "dateAdded": "2020-06-12T01:46:00+00:00",
+        "videos": [
+          {
+            "url": "https://videodelivery.net/e388a073552ea392093c97874cd036df/manifest/video.mpd",
+            "quality": "SD",
+            "videoType": "DASH"
+          }
+        ],
+        "duration": 1779,
+        "captions": []
+      },
+      "credit": [],
+      "language": "en",
+      "thumbnail": "https://videodelivery.net/e388a073552ea392093c97874cd036df/thumbnails/thumbnail.jpg?width=800&time=5s",
+      "releaseDate": "2020-06-12T01:46:00+00:00",
+      "genres": [
+        "technology"
+      ],
+      "tags": [
+        "Interview",
+        "InternetSummit"
+      ],
+      "shortDescription": "A fireside chat discussing the history and philosophy of computing.",
+      "longDescription": "A fireside chat discussing the history and philosophy of computing."
+    },
+    {
+      "id": "30342",
+      "title": "The Risks of a Consolidating Internet",
+      "content": {
+        "dateAdded": "2020-06-12T01:46:00+00:00",
+        "videos": [
+          {
+            "url": "https://videodelivery.net/478d779664ac0f7ae7fe21064bdcb44c/manifest/video.mpd",
+            "quality": "SD",
+            "videoType": "DASH"
+          }
+        ],
+        "duration": 1944,
+        "captions": []
+      },
+      "credit": [],
+      "language": "en",
+      "thumbnail": "https://videodelivery.net/478d779664ac0f7ae7fe21064bdcb44c/thumbnails/thumbnail.jpg?width=800&time=5s",
+      "releaseDate": "2020-06-12T01:46:00+00:00",
+      "genres": [
+        "technology"
+      ],
+      "tags": [
+        "Interview",
+        "InternetSummit"
+      ],
+      "shortDescription": "An interview with Sir Tim Berners-Lee, inventor of the World Wide Web.",
+      "longDescription": "An interview with Sir Tim Berners-Lee, inventor of the World Wide Web."
+    },
+    {
+      "id": "30343",
+      "title": "Introduction to Bot Management",
+      "content": {
+        "dateAdded": "2020-06-12T01:46:00+00:00",
+        "videos": [
+          {
+            "url": "https://videodelivery.net/aa7c53cd9cf9fcc2def9f5c99ff5fa56/manifest/video.mpd",
+            "quality": "SD",
+            "videoType": "DASH"
+          }
+        ],
+        "duration": 1147,
+        "captions": []
+      },
+      "credit": [],
+      "language": "en",
+      "thumbnail": "https://videodelivery.net/aa7c53cd9cf9fcc2def9f5c99ff5fa56/thumbnails/thumbnail.jpg?width=800&time=5s",
+      "releaseDate": "2020-06-12T01:46:00+00:00",
+      "genres": [
+        "technology"
+      ],
+      "tags": [
+        "Interview",
+        "CloudflareConnect"
+      ],
+      "shortDescription": "Stop the bots! Cloudflare Director of Product Sergi Isasi provides an introduction to Bot Management.",
+      "longDescription": "Stop the bots! Cloudflare Director of Product Sergi Isasi provides an introduction to Bot Management."
+    },
+    {
+      "id": "30344",
+      "title": "Leading a fortune 500 Company in Today's Changing World",
+      "content": {
+        "dateAdded": "2020-06-12T01:46:00+00:00",
+        "videos": [
+          {
+            "url": "https://videodelivery.net/d30415680c35f1db0107ef1d80f6f7b6/manifest/video.mpd",
+            "quality": "SD",
+            "videoType": "DASH"
+          }
+        ],
+        "duration": 1902,
+        "captions": []
+      },
+      "credit": [],
+      "language": "en",
+      "thumbnail": "https://videodelivery.net/d30415680c35f1db0107ef1d80f6f7b6/thumbnails/thumbnail.jpg?width=800&time=5s",
+      "releaseDate": "2020-06-12T01:46:00+00:00",
+      "genres": [
+        "technology"
+      ],
+      "tags": [
+        "Interview",
+        "CloudflareConnect"
+      ],
+      "shortDescription": "Cloudflare co-founder Michelle Zatlyn sits down with Jeff Immelt, former CEO & Chairman of GE.",
+      "longDescription": "Cloudflare co-founder Michelle Zatlyn sits down with Jeff Immelt, former CEO & Chairman of GE."
+    },
+    {
+      "id": "30345",
+      "title": "Inventing the Future in 1983",
+      "content": {
+        "dateAdded": "2020-06-12T01:46:00+00:00",
+        "videos": [
+          {
+            "url": "https://videodelivery.net/754bf1411216d19ada11326d04ec3d12/manifest/video.mpd",
+            "quality": "SD",
+            "videoType": "DASH"
+          }
+        ],
+        "duration": 1779,
+        "captions": []
+      },
+      "credit": [],
+      "language": "en",
+      "thumbnail": "https://videodelivery.net/754bf1411216d19ada11326d04ec3d12/thumbnails/thumbnail.jpg?width=800&time=5s",
+      "releaseDate": "2020-06-12T01:46:00+00:00",
+      "genres": [
+        "technology"
+      ],
+      "tags": [
+        "Interview",
+        "InternetSummit"
+      ],
+      "shortDescription": "A chat with Sophie Wilson, chief architect of the ARM processor.",
+      "longDescription": "A chat with Sophie Wilson, chief architect of the ARM processor."
+    }
+  ]
 }
